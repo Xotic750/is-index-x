@@ -1,6 +1,6 @@
 {
   "name": "is-index-x",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Determine whether the passed value is a zero based index.",
   "homepage": "https://github.com/Xotic750/is-index-x",
   "author": {
@@ -29,11 +29,11 @@
     "url": "https://github.com/Xotic750/is-index-x/issues"
   },
   "dependencies": {
-    "math-clamp-x": "^1.0.0",
+    "math-clamp-x": "^1.2.0",
     "max-safe-integer": "^1.0.1",
-    "safe-to-string-x": "^2.0.1",
-    "to-integer-x": "^2.0.1",
-    "to-number-x": "^1.0.1"
+    "to-integer-x": "^3.0.0",
+    "to-number-x": "^2.0.0",
+    "to-string-symbols-supported-x": "^1.0.0"
   },
   "devDependencies": {
     "@xotic750/eslint-config-standard-x": "^2.2.1",
