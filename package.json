@@ -51,7 +51,7 @@
   "dependencies": {
     "math-clamp-x": "^1.2.0",
     "max-safe-integer": "^2.0.0",
-    "to-integer-x": "^3.0.0",
+    "to-integer-x": "^4.0.0",
     "to-number-x": "^3.0.5",
     "to-string-symbols-supported-x": "^2.0.2"
   },
