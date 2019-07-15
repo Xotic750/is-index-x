@@ -3,10 +3,8 @@ import toInteger from 'to-integer-x';
 import toNumber from 'to-number-x';
 import mathClamp from 'math-clamp-x';
 import MAX_SAFE_INTEGER from 'max-safe-integer';
-
-const reIsUint = /^(?:0|[1-9]\d*)$/;
-const rxTest = reIsUint.test;
-
+var reIsUint = /^(?:0|[1-9]\d*)$/;
+var rxTest = reIsUint.test;
 /**
  * This method determines whether the passed value is a zero based index.
  * JavaScript arrays are zero-indexed: the first element of an array is at
@@ -18,14 +16,15 @@ const rxTest = reIsUint.test;
  * @returns {boolean} A Boolean indicating whether or not the given value is a
  * zero based index within bounds.
  */
+
 export default function isIndex(value, length) {
-  const string = safeToString(value);
+  var string = safeToString(value);
 
   if (rxTest.call(reIsUint, string) === false) {
     return false;
   }
 
-  const number = toNumber(string);
+  var number = toNumber(string);
 
   if (arguments.length > 1) {
     return number < mathClamp(toInteger(length), MAX_SAFE_INTEGER);
@@ -33,3 +32,5 @@ export default function isIndex(value, length) {
 
   return number < MAX_SAFE_INTEGER;
 }
+
+//# sourceMappingURL=is-index-x.esm.js.map
