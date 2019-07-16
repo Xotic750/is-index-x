@@ -11,7 +11,7 @@ describe('isIndex', function() {
     expect.assertions(10);
     expect(isIndex(0)).toBe(true);
     expect(isIndex(1)).toBe(true);
-    /* eslint-disable-next-line compat/compat */
+
     expect(isIndex(Number.MAX_SAFE_INTEGER - 1)).toBe(true);
     expect(isIndex(1, 5)).toBe(true);
     expect(isIndex(1, '5')).toBe(true);
@@ -40,21 +40,21 @@ describe('isIndex', function() {
     expect(isIndex(noop)).toBe(false);
     expect(isIndex([])).toBe(false);
     expect(isIndex([1, 2])).toBe(false);
-    /* eslint-disable-next-line compat/compat */
+
     expect(isIndex(Number.MAX_SAFE_INTEGER)).toBe(false);
-    /* eslint-disable-next-line compat/compat */
+
     expect(isIndex(Number.MAX_SAFE_INTEGER, Infinity)).toBe(false);
-    /* eslint-disable-next-line compat/compat */
+
     expect(isIndex(Number.MAX_SAFE_INTEGER, -Infinity)).toBe(false);
-    /* eslint-disable-next-line compat/compat */
+
     expect(isIndex(Number.MAX_SAFE_INTEGER, Number.MAX_SAFE_INTEGER)).toBe(false);
-    /* eslint-disable-next-line compat/compat */
+
     expect(isIndex(Number.MAX_SAFE_INTEGER - 1, NaN)).toBe(false);
-    /* eslint-disable-next-line compat/compat */
+
     expect(isIndex(Number.MAX_SAFE_INTEGER - 1, '')).toBe(false);
-    /* eslint-disable-next-line compat/compat */
+
     expect(isIndex(Number.MAX_SAFE_INTEGER - 1, null)).toBe(false);
-    /* eslint-disable-next-line compat/compat,no-void */
+
     expect(isIndex(Number.MAX_SAFE_INTEGER - 1, void 0)).toBe(false);
     expect(isIndex(100, '0xa')).toBe(false);
     expect(isIndex(100, '0o10')).toBe(false);
