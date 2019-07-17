@@ -2,8 +2,8 @@ import safeToString from 'to-string-symbols-supported-x';
 import toInteger from 'to-integer-x';
 import toNumber from 'to-number-x';
 import mathClamp from 'math-clamp-x';
-import MAX_SAFE_INTEGER from 'max-safe-integer';
 
+const MAX_SAFE_INTEGER = 9007199254740991;
 const reIsUint = /^(?:0|[1-9]\d*)$/;
 const rxTest = reIsUint.test;
 

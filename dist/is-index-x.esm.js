@@ -2,7 +2,7 @@ import safeToString from 'to-string-symbols-supported-x';
 import toInteger from 'to-integer-x';
 import toNumber from 'to-number-x';
 import mathClamp from 'math-clamp-x';
-import MAX_SAFE_INTEGER from 'max-safe-integer';
+var MAX_SAFE_INTEGER = 9007199254740991;
 var reIsUint = /^(?:0|[1-9]\d*)$/;
 var rxTest = reIsUint.test;
 /**
