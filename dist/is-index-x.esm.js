@@ -17,7 +17,7 @@ var rxTest = reIsUint.test;
  * zero based index within bounds.
  */
 
-export default function isIndex(value, length) {
+var isIndex = function isIndex(value, length) {
   var string = safeToString(value);
 
   if (rxTest.call(reIsUint, string) === false) {
@@ -31,6 +31,8 @@ export default function isIndex(value, length) {
   }
 
   return number < MAX_SAFE_INTEGER;
-}
+};
+
+export default isIndex;
 
 //# sourceMappingURL=is-index-x.esm.js.map

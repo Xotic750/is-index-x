@@ -18,7 +18,7 @@ const rxTest = reIsUint.test;
  * @returns {boolean} A Boolean indicating whether or not the given value is a
  * zero based index within bounds.
  */
-export default function isIndex(value, length) {
+const isIndex = function isIndex(value, length) {
   const string = safeToString(value);
 
   if (rxTest.call(reIsUint, string) === false) {
@@ -32,4 +32,6 @@ export default function isIndex(value, length) {
   }
 
   return number < MAX_SAFE_INTEGER;
-}
+};
+
+export default isIndex;
