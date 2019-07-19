@@ -1,6 +1,6 @@
 {
   "name": "is-index-x",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Determine whether the passed value is a zero based index.",
   "homepage": "https://github.com/Xotic750/is-index-x",
   "author": {
@@ -49,10 +49,10 @@
     "url": "https://github.com/Xotic750/is-index-x/issues"
   },
   "dependencies": {
-    "math-clamp-x": "^3.0.11",
-    "to-integer-x": "^4.0.17",
-    "to-number-x": "^3.0.17",
-    "to-string-symbols-supported-x": "^2.0.11"
+    "math-clamp-x": "^3.0.12",
+    "to-integer-x": "^4.0.18",
+    "to-number-x": "^3.0.18",
+    "to-string-symbols-supported-x": "^2.0.12"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
