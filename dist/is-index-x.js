@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-25T22:19:38.813Z",
+  "date": "2019-07-26T14:29:38.093Z",
   "describe": "",
   "description": "Determine whether the passed value is a zero based index.",
   "file": "is-index-x.js",
   "hash": "8a4e6d60d9b0f74ddfeb",
   "license": "MIT",
-  "version": "2.0.13"
+  "version": "2.0.14"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
