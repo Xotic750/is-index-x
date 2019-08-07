@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-08-07T01:30:46.316Z",
+  "date": "2019-08-07T22:21:18.607Z",
   "describe": "",
   "description": "Determine whether the passed value is a zero based index.",
   "file": "is-index-x.js",
